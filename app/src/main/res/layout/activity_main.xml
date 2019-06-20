@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:id="@+id/linear_Layout_1"
+       android:layout_width="match_parent"
+       android:layout_height="300dp"
+       android:orientation="vertical"
+       android:background="@color/colorPrimary"
+       android:elevation="10dp">
+       <ImageView
+           android:layout_marginTop="25dp"
+           android:layout_width="160dp"
+           android:layout_height="150dp"
+           android:src="@drawable/ic_login"
+           android:layout_gravity="center"
+           android:background="@drawable/icon_rounded"
+           android:elevation="10dp"
+
+           />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/login"
+           android:layout_gravity="center"
+           android:textSize="60dp"
+           android:textColor="#fff"
+           android:layout_marginTop="15dp"/>
+   </LinearLayout>
+
+<LinearLayout
+    android:layout_below="@+id/linear_Layout_1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+<android.support.design.widget.TextInputLayout
+    android:id="@+id/Edt_txt_email"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:errorEnabled="true"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+    app:boxStrokeColor="@color/colorPrimary"
+    app:boxCornerRadiusBottomEnd="15dp"
+    app:boxCornerRadiusBottomStart="15dp"
+    app:boxCornerRadiusTopEnd="15dp"
+    app:boxCornerRadiusTopStart="15dp"
+    >
+
+    <android.support.design.widget.TextInputEditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter email"
+        android:textColorHint="@color/colorAccent"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/colorAccent"
+        />
+
+</android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/Edt_txt_password"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:errorEnabled="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:passwordToggleEnabled="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp">
+
+        <android.support.design.widget.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_password"
+            android:textColorHint="@color/colorPrimary"
+            android:inputType="textPassword"
+            android:textColor="@color/colorAccent"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:background="@drawable/btn_rounded"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="10dp"
+        android:onClick="onClick"
+        android:layout_marginRight="10dp"
+        />
+    <TextView
+        android:id="@+id/Txt_view_new_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="New User?Sign Up here."
+        android:textColor="@color/colorPrimary"/>
+</LinearLayout>
+
+</RelativeLayout>
