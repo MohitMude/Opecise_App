@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.iitism.opecise.MainActivity;
 import com.iitism.opecise.R;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
@@ -71,7 +72,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             if(!validateEmail() | !validatePassword()){
                 return;
             }
-            Toast.makeText(this, "Working Fine", Toast.LENGTH_SHORT).show();
+           Intent intent=new Intent(getApplicationContext(), MainActivity.class);
+            finish();
+            startActivity(intent);
         }
 
 

@@ -65,7 +65,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     {
         String password=textInputSignUpPassword.getEditText().getText().toString().trim();
         String confirmpassword=textInputSignUpConfirmPassword.getEditText().getText().toString().trim();
-        if(password==confirmpassword) {
+        if(password.equals(confirmpassword)) {
             if (password.isEmpty() && confirmpassword.isEmpty()) {
                 textInputSignUpPassword.setError("This field cannot be empty");
                 textInputSignUpConfirmPassword.setError("This field cannot be empty");

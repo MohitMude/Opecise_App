@@ -14,5 +14,15 @@
     <string name="enter_email">Enter Email</string>
     <string name="enter_phone_no">Enter Phone No.</string>
     <string name="enter_name">Enter Name</string>
-
+    <string name="web_development">WEB DEVELOPMENT</string>
+    <string name="app_development">APP DEVELOPMENT</string>
+    <string name="digital_marketing">DIGITAL MARKETING</string>
+    <string name="graphic_designing">GRAPHIC DESIGNING</string>
+    <string name="services">SERVICES</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="about_us">About Us</string>
+    <string name="portfolio">PORTFOLIO</string>
+    <string name="change_password">Change Password</string>
+    <string name="logout">LOGOUT</string>
+    
 </resources>
